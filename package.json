@@ -1,0 +1,38 @@
+{
+    "app_name": "CALC",
+    "main": "index.html",
+    "name": "calc",
+    "webexe_settings": {
+        "blacklist": "",
+        "custom_script": "",
+        "download_dir": "",
+        "export_dir": "output",
+        "force_download": false,
+        "linux-x32": true,
+        "linux-x64": true,
+        "mac-x64": false,
+        "nw_compression_level": 0,
+        "nw_version": "0.83.0",
+        "output_pattern": "",
+        "sdk_build": false,
+        "uncompressed_folder": false,
+        "whitelist": "",
+        "windows-x32": true,
+        "windows-x64": true
+    },
+    "webkit": {},
+    "window": {
+        "frame": true,
+        "height": 360,
+        "icon": "balance-sheet.png",
+        "id": "CALC",
+        "kiosk": false,
+        "no-edit-menu": false,
+        "resizable": false,
+        "show": true,
+        "show_in_taskbar": true,
+        "title": "CALC",
+        "visible": true,
+        "width": 350
+    }
+}
