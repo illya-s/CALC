@@ -7,7 +7,7 @@
         "force_download": false,
         "linux-x32": true,
         "linux-x64": true,
-        "mac-x64": false,
+        "mac-x64": true,
         "nw_compression_level": 0,
         "nw_version": "0.83.0",
         "output_pattern": "",

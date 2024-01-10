@@ -23,7 +23,7 @@
     "webkit": {},
     "window": {
         "frame": true,
-        "height": 360,
+        "height": 365,
         "icon": "balance-sheet.png",
         "id": "CALC",
         "kiosk": false,
@@ -33,6 +33,6 @@
         "show_in_taskbar": true,
         "title": "CALC",
         "visible": true,
-        "width": 350
+        "width": 320
     }
 }

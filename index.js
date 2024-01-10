@@ -4,7 +4,7 @@ const div = document.createElement('div')
 div.classList.add('keyboard')
 document.querySelector('.calculator').appendChild(div)
 
-'C CE % / 7 8 9 * 4 5 6 - 1 2 3 + ( 0 ) ='.split(' ')
+'CE ( ) / 7 8 9 * 4 5 6 - 1 2 3 + 0 . C ='.split(' ')
 // пробегаемся по массиву
 // для каждого символа
 // создаем кнопку с помощью строкового литерала
@@ -21,7 +21,7 @@ document.querySelectorAll('button').forEach(button => {
 })
 
 document.addEventListener('keydown', event => {
-    if ((event.key).match(/[0-9%\/*\-+\(\)=]|Backspace|Enter/)) calc(event.key)
+    if ((event.key).match(/[0-9.\/*\-+\(\)=]|Backspace|Enter/)) calc(event.key)
 })
 
 // функция принимает значение кнопки или ключ клавиши
@@ -33,8 +33,7 @@ function calc(value) {
             // вычисляем значение строки
             // это возможно благодаря методу "evaluate" объекта "math"
             // Math.trunc используется для округления до целого числа
-            output.textContent = Math.trunc(math.evaluate(output.textContent))
-            
+            output.textContent = (math.evaluate(output.textContent)).toFixed(1)
         // если операцию выполнить невозможно
         } catch {
             // сохраняем значение поля

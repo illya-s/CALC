@@ -12,8 +12,8 @@ body {
 }
   
 .calculator {
-    min-width: 350px;
-    min-height: auto;
+    /* min-width: 350px;
+    min-height: auto; */
     padding: 10px;
     display: flex;
     flex-direction: column;
