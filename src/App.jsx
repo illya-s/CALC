@@ -83,7 +83,7 @@ function App() {
             <div className="output-wrapper">
                 <span>{oldOut}</span>
 
-                <Textfit className="input" min={16} max={48} mode="single">
+                <Textfit className="input" min={32} max={64} mode="single">
                     {output}
                 </Textfit>
             </div>

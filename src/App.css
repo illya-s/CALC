@@ -28,8 +28,12 @@ body, #root {
     justify-content: space-between;
 }
 .main-wrapper.desktop {
-    display: flex;
-    flex-direction: column;
+    padding: 30rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr repeat(5, max-content);
+    gap: .25rem;
     place-content: center;
 }
 
@@ -59,7 +63,6 @@ body, #root {
     
     color: #FFF;
     font-weight: 900;
-    /*font-size: 1.75rem;*/
     text-align: right;
     font-family: 'Fira Code', monospace;
     
@@ -81,6 +84,14 @@ body, #root {
     color: #FFF;
     font-family: sans-serif;
     font-size: 2rem;
+
+    transition: opacity .2s linear;
+    
+    &:hover, &:active {
+        border: none;
+        outline: none;
+        opacity: .5;
+    }
 
     &.clear {
         background-color: hsl(7, 50%, 60%);
